@@ -1,0 +1,125 @@
+GL Coordinates
+//THE facing wall
+            gl.glBegin(GL2.GL_LINE_STRIP);
+            gl.glVertex2f(-0.3f, 0.3f);
+            gl.glVertex2f(-0.3f, -0.3f);
+            gl.glVertex2f(0.3f, -0.3f);
+            gl.glVertex2f(0.3f, 0.3f);
+            gl.glEnd();
+
+
+//            //The triangle extending the facing wall
+            gl.glBegin(GL2.GL_LINE_STRIP);
+            gl.glVertex2f(-0.3f, 0.3f);
+            gl.glVertex2f(0.0f, 0.6f);
+            gl.glVertex2f(0.3f, 0.3f);
+            gl.glEnd();
+
+//            //THE door
+            gl.glBegin(GL2.GL_LINE_LOOP);
+            gl.glVertex2f(-0.1f, -0.3f);
+            gl.glVertex2f(0.1f, -0.3f);
+            gl.glVertex2f(0.1f, 0.0f);
+            gl.glVertex2f(-0.1f, 0.0f);
+            gl.glEnd();
+            //door split
+            gl.glBegin(GL2.GL_LINES);
+            gl.glVertex2f(0.0f, 0.0f);
+            gl.glVertex2f(0.0f, -0.3f);
+            gl.glEnd();
+
+            //Windows
+            gl.glBegin(GL2.GL_LINE_LOOP);
+            gl.glVertex2f(-0.2f, 0.2f);
+            gl.glVertex2f(-0.1f, 0.2f);
+            gl.glVertex2f(-0.1f, 0.3f);
+            gl.glVertex2f(-0.2f, 0.3f);
+            gl.glEnd();
+
+            gl.glBegin(GL2.GL_LINE_LOOP);
+            gl.glVertex2f(0.1f, 0.2f);
+            gl.glVertex2f(0.2f, 0.2f);
+            gl.glVertex2f(0.2f, 0.3f);
+            gl.glVertex2f(0.1f, 0.3f);
+            gl.glEnd();
+
+
+            //The floor Line
+            gl.glBegin(GL2.GL_LINES);
+            gl.glVertex2f(0.3f, -0.3f);
+            gl.glVertex2f(0.7f, -0.15f);
+            gl.glEnd();
+//
+//            //sidewindow
+//            gl.glBegin(GL2.GL_LINE_STRIP);
+//            gl.glVertex2f(0.3f, 0.25f);
+//            gl.glVertex2f(0.5f, 0.2f);
+//            gl.glVertex2f(0.7f, 2.15f);
+//            gl.glVertex2f(0.7f, 0.25f);
+//            gl.glEnd();
+            
+            //parallel cieling lines
+            //lower line
+            gl.glBegin(GL2.GL_LINES);
+            gl.glVertex2f(0.4f, 0.2f);
+            gl.glVertex2f(0.8f, 0.35f);
+            gl.glEnd();
+            //upper line
+            gl.glBegin(GL2.GL_LINES);
+            gl.glVertex2f(0.4f, 0.25f);
+            gl.glVertex2f(0.8f, 0.4f);
+            gl.glEnd();
+
+            //link lines for parallel cieling lines
+            //close link
+            gl.glBegin(GL2.GL_LINES);
+            gl.glVertex2f(0.4f, 0.2f);
+            gl.glVertex2f(0.4f, 0.25f);
+            gl.glEnd();
+            //further link
+            gl.glBegin(GL2.GL_LINES);
+            gl.glVertex2f(0.8f, 0.35f);
+            gl.glVertex2f(0.8f, 0.4f);
+            gl.glEnd();
+
+            //the roof
+            //from right upper to top front
+            gl.glBegin(GL2.GL_LINES);
+            gl.glVertex2f(0.4f, 0.25f);
+            gl.glVertex2f(0.0f, 0.65f);
+            gl.glEnd();
+            //from upper to top back
+            gl.glBegin(GL2.GL_LINES);
+            gl.glVertex2f(0.8f, 0.4f);
+            gl.glVertex2f(0.4f, 0.7f);
+            gl.glEnd();
+            //from top to lower right
+            gl.glBegin(GL2.GL_LINES);
+            gl.glVertex2f(0.0f, 0.6f);
+            gl.glVertex2f(0.4f, 0.2f);
+            gl.glEnd();
+            //from top to lower left
+            gl.glBegin(GL2.GL_LINES);
+            gl.glVertex2f(0.0f, 0.6f);
+            gl.glVertex2f(-0.4f, 0.2f);
+            gl.glEnd();
+            //from top to upper left
+            gl.glBegin(GL2.GL_LINES);
+            gl.glVertex2f(-0.4f, 0.25f);
+            gl.glVertex2f(0.0f, 0.65f);
+            gl.glEnd();
+            //linking left upper to left lower
+            gl.glBegin(GL2.GL_LINES);
+            gl.glVertex2f(-0.4f, 0.25f);
+            gl.glVertex2f(-0.4f, 0.2f);
+            gl.glEnd();
+            //from top to back
+            gl.glBegin(GL2.GL_LINES);
+            gl.glVertex2f(0.4f, 0.7f);
+            gl.glVertex2f(0.0f, 0.65f);
+            gl.glEnd();
+            //from floor to ceiling
+            gl.glBegin(GL2.GL_LINES);
+            gl.glVertex2f(0.7f, -0.15f);
+            gl.glVertex2f(0.7f, 0.3f);
+            gl.glEnd();
